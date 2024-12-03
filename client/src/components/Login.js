@@ -16,7 +16,7 @@ const{showAlert}=props;
     e.preventDefault();
     
     
-    const response = await fetch(`${host}api/auth/login`, {
+    const response = await fetch(`${host}/api/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

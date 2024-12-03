@@ -54,7 +54,7 @@ const Notes = (props) => {
     try {
       // API call to update the note in the backend
       const response = await fetch(
-        `${host}api/notes/updatenotes/${editingNote._id}`,
+        `${host}/api/notes/updatenotes/${editingNote._id}`,
         {
           method: "PUT",
           headers: {

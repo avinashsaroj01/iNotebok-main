@@ -10,7 +10,7 @@ const NoteState = (props) => {
   //Get All notes
   const getNotes=async()=>{
     
-    const response = await fetch(`${host}api/notes/fetchallnotes`, {
+    const response = await fetch(`${host}/api/notes/fetchallnotes`, {
       method: "GET",
       headers:{
          'Content-Type':'application/json',
@@ -27,7 +27,7 @@ const NoteState = (props) => {
   //AddNote
   const addNote=async(title,description,tag)=>{
     
-    const response = await fetch(`${host}api/notes/addnote`, {
+    const response = await fetch(`${host}/api/notes/addnote`, {
       method: "POST",
       body: JSON.stringify({title,description,tag}),
       headers:{
@@ -45,7 +45,7 @@ const NoteState = (props) => {
   //Delete Note
   const deleteNote=async(id)=>{
 
-    const response = await fetch(`${host}api/notes/deletenote/${id}`, {
+    const response = await fetch(`${host}/api/notes/deletenote/${id}`, {
       method: "DELETE",
       body: JSON.stringify({id}),
       headers:{
@@ -68,7 +68,7 @@ const NoteState = (props) => {
   //Edit Note
   const editNote= async(id,title,description,tag)=>{
        //API calls
-       const response = await fetch(`${host}api/notes/updatenotes/${id}`, {
+       const response = await fetch(`${host}/api/notes/updatenotes/${id}`, {
         method: "PUT",
         body: JSON.stringify({title,description,tag}),
         headers:{
