@@ -10,7 +10,7 @@ const Signup = (props) => {
     email: "",
     password: "",
   });
-  const host = "https://i-notebok-main-5g9b4qaxa-avinash-sorojs-projects.vercel.app";
+  const host = "https://i-notebok-main-server.vercel.app";
   const handleSubmit = async (e) => {
     e.preventDefault();
 
