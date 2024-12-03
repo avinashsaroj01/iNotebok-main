@@ -35,7 +35,7 @@ connectToMongo();
 const app = express();
 
 app.use(cors({
-  origin: 'https://i-notebok-main-9n2b.vercel.app', // Your frontend's Vercel URL
+  origin: 'https://i-notebok-main-frontnew.vercel.app', // Your frontend's Vercel URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
   credentials: true, // Include credentials in requests
   allowedHeaders: ['Content-Type', 'auth-token'], // Specify allowed headers
