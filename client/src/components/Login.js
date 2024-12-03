@@ -7,7 +7,7 @@ const{showAlert}=props;
   const history = useHistory();
 
   const [credentials, setCredentials] = useState({ email: "", password: "" });
-  const host = "http://localhost:5000/";
+  const host = "https://i-notebok-main-5g9b4qaxa-avinash-sorojs-projects.vercel.app/";
   useEffect(() => {
     setCredentials({ email: "", password: "" });
   }, ["/login"]);
