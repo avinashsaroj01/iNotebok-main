@@ -1,3 +1,5 @@
+const { body, validationResult } = require('express-validator');
+
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
@@ -7,7 +9,6 @@ var fetchuser= require('../middleware/fetchuser');
 
 
 const JWT_SECRET= "iamavinash";
-const { body, validationResult } = require('express-validator');
 
  // Route 1 :  Create a user using: POST."/api/auth/createuser" Not login required
 router.post('/createuser',[
