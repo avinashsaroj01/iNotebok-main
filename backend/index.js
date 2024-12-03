@@ -40,8 +40,8 @@ const app = express();
 app.use(cors({
   origin: 'https://i-notebok-main-9n2b.vercel.app', // Allow only this origin
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
-  credentials: true, // If using cookies or authentication
   allowedHeaders: ['Content-Type', 'auth-token'],
+  credentials: true, // If using cookies or authentication
 }));
 app.use(express.json());
 
