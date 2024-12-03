@@ -8,7 +8,7 @@ const Notes = (props) => {
   let history= useHistory();
   const { showAlert } = props;
   const { notes, getNotes, setNote } = context;
-  const host = "http://localhost:5000";
+  const host = "https://i-notebok-main-5g9b4qaxa-avinash-sorojs-projects.vercel.app";
 
   useEffect(() => {
     if (localStorage.getItem('token')) {  
