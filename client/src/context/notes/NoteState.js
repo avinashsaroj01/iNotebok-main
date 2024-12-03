@@ -3,7 +3,7 @@ import noteContext from "./noteContext";
 
 const NoteState = (props) => {
   const{showAlert}=props;
-  const host= "https://i-notebok-main-5g9b4qaxa-avinash-sorojs-projects.vercel.app"
+  const host= "http://localhost:5000"
   const InitialNote=[]
   const[notes,setNote]=useState(InitialNote)
 
